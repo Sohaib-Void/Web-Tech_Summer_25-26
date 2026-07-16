@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px 20px;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #eaf3fb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.container {
+  background-color: #f5faff;
+  border: 1px solid #cfe3f5;
+  border-radius: 15px;
+  border-color: #0c1b2a;
+  padding: 30px 35px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.container:hover{
+  background-color:#abc6df
+}
+
+h1 {
+  text-align: center;
+  color: #0c1b2a;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+h1 span{
+  color :#4785c0
+}
+
+h2 {
+  text-align: center;
+  color: #2c5d8f;
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 6px;
+}
+
+.required {
+  color: #e74c3c;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #b8d4ea;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #2c3e50;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #5a9bd8;
+  box-shadow: 0 0 0 3px rgba(90, 155, 216, 0.2);
+}
+
+.error {
+  display: block;
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 4px;
+  min-height: 14px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+button[type="submit"] {
+  background-color: #5a9bd8;
+  color: #ffffff;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #4785c0;
+}
+
+.list-container {
+  max-width: 800px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #cfe3f5;
+  padding: 8px 10px;
+  text-align: left;
+  font-size: 13px;
+  color: #2c3e50;
+}
+
+th {
+  background-color: #dcecf9;
+  color: #2c5d8f;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f0f7fd;
+}
+
+#noStudents {
+  text-align: center;
+  color: #7f95a8;
+  font-style: italic;
+}

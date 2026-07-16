@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home | Registration</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="shortcut icon" href="Image/icon.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1> <span>AIUB</span> Student Registration</h1>
+
+    <form id="registrationForm" novalidate>
+
+      <div class="form-group">
+        <label for="firstName">First Name <span class="required">*</span></label>
+        <input type="text" id="firstName" name="firstName">
+        <span class="error" id="firstNameError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last Name <span class="required">*</span></label>
+        <input type="text" id="lastName" name="lastName">
+        <span class="error" id="lastNameError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="studentId">Student ID <span class="required">*</span></label>
+        <input type="text" id="studentId" name="studentId" placeholder="21-12345-1">
+        <span class="error" id="studentIdError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email <span class="required">*</span></label>
+        <input type="text" id="email" name="email" placeholder="name@student.aiub.edu">
+        <span class="error" id="emailError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="creditCompleted">Credit Completed <span class="required">*</span></label>
+        <input type="number" id="creditCompleted" name="creditCompleted" placeholder="0 - 147">
+        <span class="error" id="creditCompletedError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="department">Department <span class="required">*</span></label>
+        <select id="department" name="department">
+          <option value="">-- Select Department --</option>
+          <option value="CSE">CSE</option>
+          <option value="EEE">EEE</option>
+          <option value="BBA">BBA</option>
+          <option value="English">English</option>
+          <option value="Architecture">Architecture</option>
+          <option value="Economics">Economics</option>
+        </select>
+        <span class="error" id="departmentError"></span>
+      </div>
+
+      <div class="form-group button-group">
+        <button type="submit">Register</button>
+      </div>
+
+    </form>
+  </div>
+
+</body>
+
+</html>
